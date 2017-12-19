@@ -1,4 +1,4 @@
-# pubgtracker.com PHP api
+# pubgtracker.com php api
 
 A simple wrapper for Tracker Network's api
 
@@ -13,7 +13,7 @@ composer require rickyxstar/pubgstats
 
 Retrieving stats
 ```php
-$pubgStats = new PubgStats("YOU-API-KEY");
+$pubgStats = new PubgStats("YOUR-API-KEY");
 $profile = $pubgStats->getProfile("Rickyxstar");
 
 print_r($profile->stats);
@@ -26,7 +26,7 @@ $profile->stats["REGION"]["SEASON"]["MODE"]->STATISTIC
 
 If you'd like to get the user's KDR in Squad FPP for season 5 in North America
 ```php
-$pubgStats = new PubgStats("YOU-API-KEY");
+$pubgStats = new PubgStats("YOUR-API-KEY");
 $profile = $pubgStats->getProfile("Rickyxstar");
 
 echo $profile->stats["na"]["2017-pre6"]["squad-fpp"]->KillDeathRatio;
@@ -36,7 +36,7 @@ echo $profile->stats["na"]["2017-pre6"]["squad-fpp"]->KillDeathRatio;
 
 `$pubgStats->getProfile()` doesnt pull all the stats. If you find stats are missing you may need to refine your search. You can do this with the options array.
 ```php
-$pubgStats = new PubgStats("YOU-API-KEY");
+$pubgStats = new PubgStats("YOUR-API-KEY");
 $profile = $pubgStats->getProfile("Rickyxstar", array(
     "region" => "na",
     "season" => "2017-pre5"
@@ -57,7 +57,7 @@ Modes
 # Lookup PUBG nickname by Steam ID
 
 ```php
-$pubgStats = new PubgStats("YOU-API-KEY");
+$pubgStats = new PubgStats("YOUR-API-KEY");
 
 $profile = $pubgStats->getProfileBySteamID("76561198190721251");
 
@@ -71,7 +71,7 @@ echo $profile->nickname;
 
 To get match history you'll need the user's account ID. We can get this with thier profile.
 ```php
-$pubgStats = new PubgStats("YOU-API-KEY");
+$pubgStats = new PubgStats("YOUR-API-KEY");
 
 $profile = $pubgStats->getProfileBySteamID("76561198190721251");
 
