@@ -39,7 +39,7 @@ class PubgStats {
         
     }
 
-    public function getNickname(string $steamID) {
+    public function getProfileBySteamID(string $steamID) {
         $client = new Client(['base_uri' => $this->getBaseUri()]);
         
         $response = $client->request('GET', 'search/steam', array(
