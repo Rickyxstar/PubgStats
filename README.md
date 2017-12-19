@@ -13,6 +13,10 @@ composer require rickyxstar/pubgstats
 
 Retrieving stats
 ```php
+require_once 'vendor/autoload.php';
+
+Use Rickyxstar\PubgStats;
+
 $pubgStats = new PubgStats("YOUR-API-KEY");
 $profile = $pubgStats->getProfile("Rickyxstar");
 
