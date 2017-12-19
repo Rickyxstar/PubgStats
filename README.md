@@ -11,7 +11,7 @@ composer require rickyxstar/pubgstats
 
 # Basic Useage
 
-Retrieving stats
+Retrieving stats. You can get an api key under "Authentication" [here](https://pubgtracker.com/site-api). 
 ```php
 require_once 'vendor/autoload.php';
 
@@ -78,6 +78,9 @@ To get match history you'll need the user's account ID. We can get this with thi
 $pubgStats = new PubgStats("YOUR-API-KEY");
 
 $profile = $pubgStats->getProfileBySteamID("76561198190721251");
+
+//this also works
+//$profile = $pubgStats->$pubgStats->getProfile("Rickyxstar");
 
 $matches = $pubgStats->getMatchHistory($profile->accountId);
 
