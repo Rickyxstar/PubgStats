@@ -1,3 +1,9 @@
+# pubgtracker.com's api is down
+```
+Api is disabled due to throttling we are getting from Bluehole.  Please do not contact us, we will re-enable the API as soon as it's possible. We're sorry for any trouble this has caused, but it's outside of our control.
+```
+This is error code #3. You'll get this on all api calls for the time being. I'll test this once a week and remove this message once its up again. 
+
 # pubgtracker.com php api
 
 A simple wrapper for Tracker Network's api
